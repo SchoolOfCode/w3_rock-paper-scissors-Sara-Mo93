@@ -1,0 +1,45 @@
+
+
+ /* need to move text to center, increase image sizes and find a good location to post user input name */
+
+ h1 { text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    color: black;
+
+
+}
+
+body {
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    
+}
+
+#GameRound {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    
+}
+
+#userScore {
+font-size: 30px;   
+font-family: monospace; 
+display: inline; 
+float: left;
+}
+
+#cuScore {
+  font-size: 30px;
+  font-family: monospace;
+  display: inline;
+  float: right;
+  
+}
+
+
+#selections { 
+   text-align: center;
+}
