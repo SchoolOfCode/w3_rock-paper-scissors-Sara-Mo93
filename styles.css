@@ -27,19 +27,32 @@ body {
 #userScore {
 font-size: 30px;   
 font-family: monospace; 
-display: inline; 
-float: left;
+float: right;
+margin-right: 40px;
+
 }
 
 #cuScore {
   font-size: 30px;
   font-family: monospace;
-  display: inline;
-  float: right;
+  float: left;
+  margin-left: 40px;
+
+}
+
+#choices{ 
+ display: flex;
+ justify-content: center;
   
 }
 
+#rockbtn, #scsbtn, #pbtn {
+background: none;
 
-#selections { 
-   text-align: center;
+font-size: 80px;
 }
+
+#rockbtn:hover, #scsbtn:hover, #pbtn:hover{ 
+ background-color: rgb(54, 54, 80);
+}
+

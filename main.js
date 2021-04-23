@@ -3,7 +3,8 @@ const computerScore = document.getElementById("cuScore");
 const rockemoji = document.getElementById("rockbtn");
 const paperemoji = document.getElementById("pbtn");
 const scissoremoji = document.getElementById("scsbtn");
-const userInput = document.getElementById("playername"); //would be nice to display name as player 
+const userInput = document.getElementById("playername").value; //would be nice to display name as player
+document.getElementById("playername").innerText = userInput;
 
 let pScore = 0;
 let cScore = 0;
@@ -13,7 +14,6 @@ let computerChoice;
 rockemoji.addEventListener("click", play);
 paperemoji.addEventListener("click", play);
 scissoremoji.addEventListener("click", play);
-// removed document.write("Hey " + name); let name = window.prompt("What is your username"); need to use html input instead and then use the dom to retrieve input//
 
 function getComputerChoice() {
   computerChoice = Math.random();
@@ -35,7 +35,6 @@ function play(event) {
   return;
 }
 
-// need to find a shorter way around this- refactor .
 function getWinner(userChoice, computerChoice) {
   document.getElementById("GameRound").innerHTML = "Round " + round;
   round++;
