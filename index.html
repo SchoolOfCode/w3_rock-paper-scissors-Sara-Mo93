@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Rock, Paper, Scissors</title>
   </head>
-  <body></body>
+
+  <body>
+    <div userinput>
+      <!-- need to use dom to collect userinput data and print next to score  -->
+      <input type="username" id="playername" maxlength="10" />
+      <label for="playername">Username</label>
+      <input type="submit" value="submit" />
+    </div>
+
+    <h1>Rock Paper Scissors Game</h1>
+    <br />
+    <div id="GameRound">Current Round</div>
+    <br />
+    <div id="choices">
+      <button id="rockbtn" rock>✊</button>
+      <button id="pbtn" paper>✋</button>
+      <button id="scsbtn" scissors>✌️</button>
+    </div>
+    <br />
+    <div id="Results">
+      <div id="userScore">Player Score 0</div>
+      <div id="cuScore">Computer Score 0</div>
+    </div>
+    <br />
+    <br />
+    <script src="main.js"></script>
+  </body>
 </html>
